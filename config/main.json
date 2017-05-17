@@ -1,0 +1,5 @@
+{
+  "environments": ["int", "cert", "fran"],
+  "apps": [
+  ]
+}

@@ -1,0 +1,16 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(http-equiv="refresh" content="60")
+  body
+    table
+        tr
+          th
+          each env in envs
+            th #{env}
+        each app in apps
+          tr
+            td.name #{app.name}
+            each v in app.versions
+              td(class=v.error ? 'error' : v.status) #{v.version}
